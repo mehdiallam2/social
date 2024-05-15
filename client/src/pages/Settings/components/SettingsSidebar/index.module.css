@@ -1,0 +1,57 @@
+.aside {
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 1.25rem 0.625rem;
+  border-right: 0.0625rem solid var(--border-color);
+}
+
+.aside-header {
+  padding: 0.75rem;
+}
+
+.aside-heading {
+  font-size: 1.5rem;
+}
+
+.group-heading {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: var(--gray-5);
+  font-weight: 600;
+}
+
+.group-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.group-link {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  gap: 1rem;
+  border-radius: var(--radius);
+  transition: background-color 300ms ease;
+}
+
+.group-link:hover {
+  background-color: var(--primary-bg);
+}
+
+.active {
+  background-color: var(--primary-bg);
+}
+
+.active .group-name {
+  font-weight: 500;
+}
+
+.group-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.group-name {
+  font-size: 1rem;
+}

@@ -1,0 +1,108 @@
+.profile {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 35rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.profile-heading {
+  font-size: 1.5rem;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 1.25rem;
+  background-color: var(--primary-bg);
+}
+
+.avatar {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+}
+
+.names {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.name {
+}
+
+.change-button {
+  margin-left: auto;
+}
+
+.form {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.form-input-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.input-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.375rem 0.75rem;
+  border: var(--border-width) var(--border-style) var(--border-color);
+  border-radius: var(--radius-lg);
+  font-size: 0.875rem;
+  transition: all 300ms ease;
+}
+
+.form-input:focus {
+  border-color: var(--primary);
+}
+
+.error-message {
+  margin-left: 0.5rem;
+  color: var(--danger);
+}
+
+.error-border {
+  border-color: var(--danger);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0.375rem 0.75rem;
+  color: white;
+  background-color: var(--primary);
+  border-radius: var(--radius-lg);
+  font-size: 0.875rem;
+}
+
+.button:disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+  background-color: var(--primary-light);
+}

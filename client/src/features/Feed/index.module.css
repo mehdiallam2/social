@@ -1,0 +1,14 @@
+.feed {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  max-width: 30rem;
+  display: grid;
+  gap: 2rem;
+}

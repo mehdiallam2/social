@@ -1,0 +1,30 @@
+.list {
+  background-color: var(--background);
+  border: 0.0625rem solid var(--border);
+  min-width: 20rem;
+  border-radius: 0.625rem;
+  transition: opacity 500ms ease;
+}
+
+.list-item:not(:last-child) {
+  border-bottom: 1px solid var(--border);
+}
+
+.list-button {
+  width: 100%;
+  min-height: 3rem;
+  text-align: center;
+  font-size: 0.875rem;
+  vertical-align: middle;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.list-button:hover {
+  background-color: var(--muted);
+}
+
+.list-button-danger {
+  color: var(--destructive);
+  font-weight: bold;
+}

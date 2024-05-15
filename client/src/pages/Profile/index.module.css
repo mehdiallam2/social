@@ -1,0 +1,105 @@
+.profile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.avatar {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  padding: 6px;
+  border: 2px solid var(--border-color);
+  cursor: pointer;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.edit {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.username {
+  font-size: 1.25rem;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.count {
+  font-weight: 600;
+}
+
+.name {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.bio {
+  max-width: 25rem;
+}
+
+.button {
+  font-size: 0.75rem;
+  padding: 6px 8px;
+  border: 0.0625rem solid transparent;
+  border-radius: var(--radius);
+  background-color: var(--primary-bg);
+  transition: all 400ms ease;
+}
+
+.button:hover {
+  background: var(--background);
+  border: 0.0625rem solid var(--border-color);
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  max-width: 30rem;
+}
+
+@media only screen and (min-width: 576px) {
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    gap: 3rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (min-width: 1400px) {
+}

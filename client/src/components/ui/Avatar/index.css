@@ -1,0 +1,23 @@
+.avatar {
+  aspect-ratio: 1 / 1;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.rounded {
+  border-radius: 1rem;
+}
+
+.small {
+  width: 2rem;
+}
+
+.medium {
+  width: 2.5rem;
+}
+
+.large {
+  width: 3rem;
+}

@@ -1,0 +1,25 @@
+.comment {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatar {
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.username,
+.date {
+  font-weight: 500;
+}
+
+.date {
+  color: var(--muted-foreground);
+}

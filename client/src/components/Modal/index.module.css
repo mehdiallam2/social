@@ -1,0 +1,10 @@
+.modal {
+  pointer-events: none;
+  opacity: 0;
+  transition: all 800ms ease;
+}
+
+.modal.open {
+  pointer-events: auto;
+  opacity: 1;
+}

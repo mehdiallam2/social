@@ -1,0 +1,139 @@
+.login {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 22rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+.title {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.875rem;
+}
+
+.label {
+  font-size: 0.875rem;
+}
+
+.input {
+  margin-top: 0.625rem;
+}
+
+.error {
+  margin-top: 0.125rem;
+  margin-left: 0.25rem;
+  color: var(--red-600);
+}
+
+.password {
+  position: relative;
+}
+
+.password-input {
+  padding-right: 3rem;
+}
+
+.password-button {
+  position: absolute;
+  top: 50%;
+  right: 0.375rem;
+  transform: translateY(-50%);
+  padding: 0.25rem 0.375rem;
+  border-radius: var(--radius);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.remember {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.forgot-password {
+  color: var(--primary);
+  font-size: 0.875rem;
+}
+
+.submit {
+  margin-bottom: 2rem;
+}
+
+.hr {
+  height: 1px;
+  background-color: var(--border-color);
+  margin-top: 1.875rem;
+  margin-bottom: 1.875rem;
+  text-align: center;
+}
+
+.hr::after {
+  content: "Or continue with";
+  position: relative;
+  top: -0.9375rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: var(--background);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.signup {
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.signup-link {
+  color: var(--primary);
+  font-weight: 500;
+  transition: color 300ms ease;
+}
+
+.signup-link:hover {
+  color: var(--primary-light);
+}
+
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1400px) {
+}
