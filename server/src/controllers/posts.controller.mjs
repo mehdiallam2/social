@@ -58,9 +58,12 @@ export async function deletePost(request, response) {
       params: { id },
     } = request;
     const post = await Post.findById(id);
+
     if (!post) return response.status(404).json({ message: "Post Not Found" });
-    if (user._id.toString() !== post.author._id.toString())
+
+    if (user._id.toString() !== post.userId._id.toString())
       return response.status(401).json({ message: "Unauthorized to delete this post" });
+
     await post.deleteOne();
     await User.findByIdAndUpdate(user._id, { $pull: { posts: id } });
     response.status(200).json({ message: "Post Deleted" });

@@ -13,12 +13,14 @@ function Feed() {
   if (error?.response?.status === 401) navigate("/signin");
   if (error) return "An error has occurred: " + error.message;
 
-  console.log(feed);
-
   return (
     <div className={styles.feed}>
       <div className={styles.container}>
-        {feed && feed.map((post, index) => <Post key={index} post={post} author={post.userId} />)}
+        {feed.length === 0 ? (
+          <p className={styles.noPosts}>No posts found</p>
+        ) : (
+          feed && feed.map((post, index) => <Post key={index} post={post} author={post.userId} />)
+        )}
       </div>
     </div>
   );
