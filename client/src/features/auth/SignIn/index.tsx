@@ -8,7 +8,7 @@ import styles from "./index.module.css";
 import { useAuthStore } from "@/app/store";
 import Input from "@/components/ui/Input";
 import Button from "@/components/ui/Button";
-import { TSignInSchema, signInSchema } from "@/schemas/signInSchema";
+import { TSignInSchema, signInSchema } from "@/lib/validation/signInSchema";
 import Checkbox from "@/components/ui/Checkbox";
 import Logo from "@/components/icons/Logo";
 import { useMutation, useQueryClient } from "@tanstack/react-query";

@@ -5,7 +5,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import axios, { AxiosError } from "axios";
 import GoogleOAuth from "@/components/GoogleOAuth";
 import { useAuthStore } from "@/app/store";
-import { TSignupSchema, signUpSchema } from "@/schemas/signUpSchema";
+import { TSignupSchema, signUpSchema } from "@/lib/validation/signUpSchema";
 import { useState } from "react";
 import Input from "@/components/ui/Input";
 import Checkbox from "@/components/ui/Checkbox";

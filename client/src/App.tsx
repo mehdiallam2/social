@@ -12,7 +12,7 @@ import axios from "axios";
 import AuthRoutes from "./features/auth/AuthRoutes";
 
 function App() {
-  axios.defaults.baseURL = "http://localhost:3000/api";
+  axios.defaults.baseURL = import.meta.env.VITE_BASE_API_URL;
   axios.defaults.withCredentials = true;
 
   return (
